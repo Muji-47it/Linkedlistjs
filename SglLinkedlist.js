@@ -1,4 +1,4 @@
-   class Node
+    class Node
     {
         constructor(data,next=null)
         {
@@ -67,16 +67,18 @@
         }
         printsize()
         {
-            console.log(this.size);
+            console.log("Size of linkedlist "+this.size);
         }
         print()
         {
             let temp=this.head;
+            let list="";
             while(temp)
             {
-                console.log(temp)
+                list=list+temp.data+"->";
                 temp=temp.next;
             }
+            console.log(list+"NULL");
         }
 
     }
@@ -92,4 +94,3 @@
     ll.removeFromBeginning();
     ll.removeFromLast();
     ll.printsize();
-    ll.print();

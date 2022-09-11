@@ -16,7 +16,7 @@
         empty()
         {
             if(this.size===0)
-            console.log("This is empty");
+            return this.size;
         }
         insertAtBeginning(data)
         {

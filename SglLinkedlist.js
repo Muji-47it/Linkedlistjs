@@ -11,7 +11,7 @@
         constructor()
         {
             this.head=null;
-            this.size=0;
+            console.log("This Linkedlist is empty");
         }
         empty()
         {

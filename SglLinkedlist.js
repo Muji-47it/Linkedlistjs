@@ -1,4 +1,4 @@
- class Node
+class Node
     {
         constructor(data,next=null)
         {
@@ -11,12 +11,12 @@
         constructor()
         {
             this.head=null;
-            console.log("This Linkedlist is empty");
+            this.size=0;
         }
         empty()
         {
             if(this.size===0)
-            return this.size;
+            console.log("This is empty");
         }
         insertAtBeginning(data)
         {

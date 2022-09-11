@@ -1,4 +1,17 @@
-class Node
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+</body>
+<script>
+    class Node
     {
         constructor(data,next=null)
         {
@@ -56,9 +69,12 @@ class Node
             this.head=null;
             else{
                 var temp=this.head;
+                var temp2=null;
                 while(temp.next)
-                {temp=temp.next}
-                temp=null;
+                {
+                    temp2=temp;
+                    temp=temp.next}
+                temp2.next=null;
                 this.size--;
             }
         }
@@ -90,3 +106,6 @@ class Node
     ll.removeFromLast();
     ll.printsize();
     ll.print();
+
+</script>
+</html>

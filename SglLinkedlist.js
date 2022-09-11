@@ -65,6 +65,21 @@
                 this.size--;
             }
         }
+        printfirstelement()
+        {
+            console.log("First element "+this.head.data)
+        }
+        printlastelement()
+        {
+            let temp =this.head;
+            let temp2;
+            while(temp.next)
+            {
+                temp2=temp.next;
+                temp=temp.next;
+            }
+            console.log("Last element "+temp2.data)
+        }
         printsize()
         {
             console.log("Size of linkedlist "+this.size);
@@ -94,3 +109,6 @@
     ll.removeFromBeginning();
     ll.removeFromLast();
     ll.printsize();
+    ll.print();
+    ll.printfirstelement();
+    ll.printlastelement();
